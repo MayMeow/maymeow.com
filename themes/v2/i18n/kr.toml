@@ -1,0 +1,39 @@
+# Translations for English
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# Generic
+#
+[translations]
+other = "번역"
+
+[postAvailable]
+other = "에도 사용 가능"
+
+
+# 404.html
+#
+[archives]
+other = "아카이브"
+
+[home]
+other = "집"
+
+[notFound]
+other = "Oops, 페이지를 찾을 수 없습니다...…"
+
+
+# posts/single.html
+#
+[readingTime]
+one   = "1분"
+other = "{{ .Count }} 회의록"
+
+[tableOfContents]
+other = "목차."
+
+[wordCount]
+one   = "원 워드"
+other = "{{ .Count }} 단어"
+
+[lastModified]
+other = "마지막 업데이트"

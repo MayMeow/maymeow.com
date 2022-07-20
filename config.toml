@@ -1,0 +1,305 @@
+baseURL = "https://www.maymeow.com"
+title   = "May Meow"
+languageCode = "en-us"
+theme = "v2"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+PygmentsCodeFences = false
+# PygmentsStyle = "monokai"
+
+paginate  = 20
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+# googleAnalytics = "G-NMF0524WN1"
+# disqusShortname = "themaymeow"
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = true
+enableEmoji     = true
+enableMissingTranslationPlaceholders = true
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "May Meow"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "May Meow's blog"
+  keywords = "Emma, MayMeow, May Meow, TheMayMeow, Haruna, May Meow"
+  images = [""]
+
+  homeSubtitle = "Anime, Cats & Coding"
+
+  # Social sites verification
+  pinteresetVerification = "630670beccf04a207d907e19d61b3ca2"
+  MastodonURL = "https://mstdn.cloud.themaymeow.com/@emma"
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  gitUrl = "https://github.com/MayMeow/themaymeow.com/commit/"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = []
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .content.
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+  themeColor = "#24292e"
+
+  # Enable theme toggle
+  # 
+  # This options enables the theme toggle for the theme. 
+  # Per default, this option is off. 
+  # The theme is respecting the prefers-color-scheme of the operating systeme. 
+  # With this option on, the page user is able to set the scheme he wants. 
+  enableThemeToggle = true
+
+  # Global language menu
+  #
+  # Enables the global language menu.
+  #
+  enableGlobalLanguageMenu = true
+
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#24292e"
+    msapplication = "#24292e"
+    theme = "#24292e"
+
+  [params.logo]
+    logoText     = "🌱 cd /home/"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    logoCursorColor    = "#ea00d9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  [params.portrait]
+    path = "/img/May-05.webp"
+    alt = "Portrait"
+
+  [params.footer]
+    trademark = true
+    rss = true
+    copyright = true
+    author = true
+
+    topText = [
+      "<a href=\"https://maymeow.substack.com\">Newsletter</a>"
+    ]
+    bottomText = [
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a> & <a href=\"http://pages.cloudflare.com\">Cloudflare</a>"
+    ]
+
+  # Social icons
+  # [[params.social]]
+  #   name = "twitter"
+  #   url  = "https://twitter.com/TheMayMeow"
+
+  # [[params.social]]
+  #   name = "email"
+  #   url  = "mailto:maymeow@pm.me"
+
+  # [[params.social]]
+  #   name = "matrix"
+  #   url  = "https://matrix.to/#/@maymeow:matrix.org"
+
+  # [[params.social]]
+  #   name = "telegram"
+  #   url  = "https://t.me/TheMayMeow"
+
+  # [[params.social]]
+  #   name = "xmpp"
+  #   url  = "xmpp//:maymeow@chat.themeow.cloud"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/maymeow"
+
+  # [[params.social]]
+  #   name = "git"
+  #   url  = "https://codeberg.org/maymeow"
+
+  # [[params.social]]
+  #   name = "gitlab"
+  #   url  = "https://gitlab.com/maymeow"
+
+  # [[params.social]]
+  #   name = "polywork"
+  #   url  = "https://bio.maymeow.me"
+
+  # [[params.social]]
+  #   name = "spotify"
+  #   url  = "https://open.spotify.com/user/8k4nk368xf4taa44ckcxatubn"
+
+  # [[params.social]]
+  #   name = "keybase"
+  #   url  = "https://keybase.io/maymeow/"
+
+  [[params.social]]
+    name = "mastodon"
+    url  = "https://mstdn.cloud.themaymeow.com/@emma"
+
+  [[params.social]]
+    name = "docker"
+    url  = "https://hub.docker.com/u/maymeow"
+
+  [[params.social]]
+    name = "nuget"
+    url  = "https://www.nuget.org/profiles/maymeow"
+    
+  [[params.social]]
+    name = "hashnode"
+    url  = "https://hashnode.com/@maymeow"
+
+  [[params.social]]
+    name = "ko-fi"
+    url  = "https://ko-fi.com/maymeow"
+  
+  [[params.social]]
+    name = "patreon"
+    url  = "https://www.patreon.com/maymeow"
+
+  # [[params.social]]
+  #   name = "twitch"
+  #   url  = "https://www.twitch.tv/themaymeow"
+
+  # [[params.social]]
+  #   name = "youtube"
+  #   url  = "https://www.youtube.com/channel/UCEdYIRvCRtr0gBVk8HrxCoQ"
+
+[languages]
+  [languages.en]
+    subtitle  = "May Meow's blog"
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+  [languages.sk]
+    subtitle  = "Mayin blog"
+    weight    = 2
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+    [languages.sk.params]
+      [languages.sk.params.logo]
+        logoText     = "cd /Domov/"
+
+  [[languages.sk.menu.main]]
+    identifier = "about"
+    name       = "O Mne"
+    url        = "about/"
+
+  [[languages.sk.menu.main]]
+    identifier = "contact"
+    name       = "Kontakt"
+    url        = "contact/"
+
+  [[languages.sk.menu.main]]
+    identifier = "posts"
+    name       = "Blog"
+    url        = "posts/"
+
+
+  [languages.kr]
+    subtitle  = "May Meow의 블로그"
+    weight    = 3
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+    [languages.kr.params]
+      homeSubtitle = "일본 만화 영화, 고양이 및 코딩"
+      [languages.kr.params.logo]
+        logoText     = "cd /집/"
+
+  [[languages.kr.menu.main]]
+    identifier = "about"
+    name       = "나에 대해서"
+    url        = "about/"
+
+  [[languages.kr.menu.main]]
+    identifier = "contact"
+    name       = "연락"
+    url        = "contact/"
+
+
+  [languages.jp]
+    subtitle  = "May Meow ブログ"
+    weight    = 3
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+    [languages.jp.params]
+      homeSubtitle = "アニメ, 猫とコーディング"
+      [languages.jp.params.logo]
+        logoText     = "cd /自宅/"
+
+  [[languages.jp.menu.main]]
+    identifier = "about"
+    name       = "私について"
+    url        = "about/"
+
+  [[languages.jp.menu.main]]
+    identifier = "contact"
+    name       = "連絡先"
+    url        = "contact/"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+    weight     = 1
+  [[menu.main]]
+    identifier = "contact"
+    name       = "Contact"
+    url        = "contact/"
+    weight     = 1
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "/posts"
+    weight     = 1
+  [[menu.main]]
+    identifier = "more-links"
+    name       = "More..."
+    url        = "more-links/"
+    weight     = 2
+    

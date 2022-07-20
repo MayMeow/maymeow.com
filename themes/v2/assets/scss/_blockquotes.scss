@@ -1,0 +1,60 @@
+blockquote {
+    &.blockquote {
+        &-block {
+            border-radius: 8px;
+            margin: 40px 0px 40px 0px;
+        }
+
+        &-success {
+            @media (prefers-color-scheme: dark) {
+                background-color: rgba(46,160,67,0.15);
+                border: 1px solid #238636;
+                color: #3fb950;
+            }
+    
+            @media (prefers-color-scheme: light) {
+                background-color: #dafbe1;
+                border: 1px solid #2da44e;
+                color: #1a7f37;
+            }
+    
+            [data-theme=dark] & {
+                background-color: rgba(46,160,67,0.15);
+                border: 1px solid #238636;
+                color: #3fb950;
+            }
+            
+            [data-theme=light] & {
+                background-color: #dafbe1;
+                border: 1px solid #2da44e;
+                color: #1a7f37;
+            }
+        }
+    
+        &-danger {
+            @media (prefers-color-scheme: dark) {
+                background-color: rgba(248,81,73,0.15);
+                border: 1px solid #f85149;
+                color: #da3633;
+            }
+    
+            @media (prefers-color-scheme: light) {
+                background-color: #FFEBE9;
+                border: 1px solid #cf222e;
+                color: #bc4c00;
+            }
+    
+            [data-theme=dark] & {
+                background-color: rgba(248,81,73,0.15);
+                border: 1px solid #f85149;
+                color: #da3633;
+            }
+            
+            [data-theme=light] & {
+                background-color: #FFEBE9;
+                border: 1px solid #cf222e;
+                color: #bc4c00;
+            }
+        }
+    }
+}

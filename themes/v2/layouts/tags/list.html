@@ -1,0 +1,26 @@
+{{ define "main" }}    
+    <main class="posts">
+        <div>
+            {{ $count := len .Data.Pages }}
+            {{ if (eq $count 1) }}
+                <span class="fc-green">{{ $count }}</span> term in:
+            {{ else }}
+                <span class="fc-green">{{ $count }}</span> terms in:
+            {{ end }}
+        </div>
+        <h1 class="post-headline mt-0">{{ .Title }}</h1>
+
+        <ul class="posts-list">
+            {{ range .Pages }}
+            <li class="post-item">
+                <a href="{{.Permalink}}">
+                    <span class="post-title">{{.Title}}</span>
+                    <span class="post-day">
+                        {{ len .Data.Pages }}
+                    </span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </main>
+{{ end }}

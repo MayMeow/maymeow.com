@@ -1,0 +1,1 @@
+FROM ghcr.io/maymeow/hugo/hugo:0.84.1

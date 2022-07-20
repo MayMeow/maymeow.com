@@ -1,0 +1,182 @@
+.panel {
+    margin: 40px 0px 40px 0px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+            box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    font-family: "Input Mono Narrow", -apple-system, BlinkMacSystemFont, "Roboto",
+        "Segoe UI", Helvetica, Arial, sans-serif;
+
+    &-centered {
+        text-align: center;
+    }
+
+    &-danger {
+        @media (prefers-color-scheme: dark) {
+            border: 1px solid #f85149;
+        }
+
+        @media (prefers-color-scheme: light) {
+            border: 1px solid #cf222e;
+        }
+
+        [data-theme=dark] & {
+            border: 1px solid #f85149;
+        }
+        
+        [data-theme=light] & {
+            border: 1px solid #cf222e;
+        }
+
+        & > .panel-title {
+            @media (prefers-color-scheme: dark) {
+                background-color: rgba(248,81,73,0.15);
+                color: #da3633;
+            }
+    
+            @media (prefers-color-scheme: light) {
+                background-color: rgba(248,81,73,0.15);
+                color: #da3633;
+            }
+    
+            [data-theme=dark] & {
+                background-color: rgba(248,81,73,0.15);
+                color: #da3633;
+            }
+            
+            [data-theme=light] & {
+                background-color: rgba(248,81,73,0.15);
+                color: #da3633;
+            }
+        }
+    }
+
+    &-success {
+        @media (prefers-color-scheme: dark) {
+            border: 1px solid #238636;
+        }
+
+        @media (prefers-color-scheme: light) {
+            border: 1px solid #2da44e;
+        }
+
+        [data-theme=dark] & {
+            border: 1px solid #238636;
+        }
+        
+        [data-theme=light] & {
+            border: 1px solid #2da44e;
+        }
+
+        & > .panel-title {
+            @media (prefers-color-scheme: dark) {
+                background-color: rgba(46,160,67,0.15);
+                color: #3fb950;
+            }
+    
+            @media (prefers-color-scheme: light) {
+                background-color: #dafbe1;
+                color: #1a7f37;
+            }
+    
+            [data-theme=dark] & {
+                background-color: rgba(46,160,67,0.15);
+                color: #3fb950;
+            }
+            
+            [data-theme=light] & {
+                background-color: #dafbe1;
+                color: #1a7f37;
+            }
+        }
+    }
+
+    &-purple {
+        @media (prefers-color-scheme: dark) {
+            border: 1px solid #8957e5;
+        }
+
+        @media (prefers-color-scheme: light) {
+            border: 1px solid #8250df;
+        }
+
+        [data-theme=dark] & {
+            border: 1px solid #8957e5;
+        }
+        
+        [data-theme=light] & {
+            border: 1px solid #8250df;
+        }
+
+        & > .panel-title {
+            @media (prefers-color-scheme: dark) {
+                background-color: rgba(163,113,247,0.15);
+                color: #a371f7;
+            }
+    
+            @media (prefers-color-scheme: light) {
+                background-color: #fbefff;
+                color: #8250df;
+            }
+    
+            [data-theme=dark] & {
+                background-color: rgba(163,113,247,0.15);
+                color: #a371f7;
+            }
+            
+            [data-theme=light] & {
+                background-color: #fbefff;
+                color: #8250df;
+            }
+        }
+    }
+
+    &-sponsor {
+        @media (prefers-color-scheme: dark) {
+            border: 1px solid #bf4b8a;
+        }
+
+        @media (prefers-color-scheme: light) {
+            border: 1px solid #bf3989;
+        }
+
+        [data-theme=dark] & {
+            border: 1px solid #bf4b8a;
+        }
+        
+        [data-theme=light] & {
+            border: 1px solid #bf3989;
+        }
+
+        & > .panel-title {
+            @media (prefers-color-scheme: dark) {
+                background-color: rgba(219,97,162,0.15);
+                color: #db61a2;
+            }
+    
+            @media (prefers-color-scheme: light) {
+                background-color: #ffeff7;
+                color: #bf3989;
+            }
+    
+            [data-theme=dark] & {
+                background-color: rgba(219,97,162,0.15);
+                color: #db61a2;
+            }
+            
+            [data-theme=light] & {
+                background-color: #ffeff7;
+                color: #bf3989;
+            }
+        }
+    }
+
+    &-title {
+        padding: 10px 20px 10px 20px;
+    }
+
+    &-content {
+        padding: 10px 20px 10px 20px;
+    }
+}

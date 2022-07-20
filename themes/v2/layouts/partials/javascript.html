@@ -1,0 +1,21 @@
+{{ $main := resources.Get "js/main.js" }}
+{{ $menu := resources.Get "js/menu.js" }}
+{{ $highlight := resources.Get "js/highlight.min.js"}}
+{{ $obsfucate := resources.Get "js/baffle.min.js"}}
+
+{{ $secureJS := slice $main $menu | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+{{ $secureJSPlugins := slice $highlight $obsfucate | resources.Concat "bundle.plugins.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+<script type="text/javascript" src="{{ $secureJSPlugins.RelPermalink }}" integrity="{{ $secureJSPlugins.Data.Integrity }}"></script>
+
+<script>
+hljs.highlightAll();
+window.baffle(".baffle").reveal(1500);
+
+</script>
+
+{{ range $val := $.Site.Params.customJS }}
+    {{ if gt (len $val) 0 }}
+        <script src="{{ $val }}"></script>
+    {{ end }}
+{{ end }}
