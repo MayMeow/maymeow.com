@@ -129,7 +129,9 @@ disableHugoGeneratorInject = false
       "<a href=\"https://maymeow.substack.com\">Newsletter</a>"
     ]
     bottomText = [
-      "Powered by <a href=\"http://gohugo.io\">Hugo</a> & <a href=\"http://pages.cloudflare.com\">Cloudflare</a>"
+      "<a href=\"http://gohugo.io\">Hugo</a>",
+      <a href=\"http://github.com/MayMeow\">GitHub</a>,
+      <a href=\"http://netlify.com\">Netlify</a>
     ]
 
   # Social icons
