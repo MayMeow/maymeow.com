@@ -130,8 +130,8 @@ disableHugoGeneratorInject = false
     ]
     bottomText = [
       "<a href=\"http://gohugo.io\">Hugo</a>",
-      <a href=\"http://github.com/MayMeow\">GitHub</a>,
-      <a href=\"http://netlify.com\">Netlify</a>
+      "<a href=\"http://github.com/MayMeow\">GitHub</a>",
+      "<a href=\"http://netlify.com\">Netlify</a>"
     ]
 
   # Social icons
