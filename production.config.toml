@@ -300,8 +300,13 @@ disableHugoGeneratorInject = false
     url        = "/posts"
     weight     = 1
   [[menu.main]]
+    identifier = "0x0"
+    name       = "0x0"
+    url        = "https://0x0.sk/"
+    weight     = 2
+    target     = "_blank"
+  [[menu.main]]
     identifier = "more-links"
     name       = "More..."
     url        = "more-links/"
-    weight     = 2
-    
+    weight     = 3
