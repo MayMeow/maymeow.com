@@ -203,6 +203,10 @@ disableHugoGeneratorInject = false
     name = "patreon"
     url  = "https://www.patreon.com/maymeow"
 
+  [[params.social]]
+    name = "discord"
+    url  = "https://discord.com/invite/ehDTGQR"
+
   # [[params.social]]
   #   name = "twitch"
   #   url  = "https://www.twitch.tv/themaymeow"
